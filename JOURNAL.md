@@ -18,3 +18,17 @@ The bias detector in `safety/bias_detector.py` uses regular-expression patterns 
 ### Issue selection notes — “Is this right for me?”
 
 I selected a Tier 1 issue because this was my first contribution to a large, multi-module codebase and I wanted an issue with a focused and realistic scope. The change was limited mainly to `safety/bias_detector.py` and its unit tests, so I could understand the affected behavior without making architectural changes across the application. The issue matched my familiarity with Python, regular expressions, testing, and debugging. I also confirmed that the expected result could be validated with clear regression tests, which made the issue appropriate for my current skill level.
+
+## Week 8 — Reproduction & solution planning
+
+**Reproduction commit link:** [add after committing]
+
+**Reproduction summary:**
+I reproduced the issue by testing common educational-bias statements against the detector in `safety/bias_detector.py`. Statements involving bootcamp graduates, self-taught developers, and online-course students were not consistently detected because the existing regex patterns were too narrow.
+
+**PLAN.md link:** [add after creating PLAN.md]
+
+**Walkthrough video (recommended):** Not recorded
+
+**Blockers or open questions:**
+The main risk is expanding the regex patterns too broadly and causing neutral statements to be flagged as biased.
