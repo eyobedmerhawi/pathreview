@@ -11,9 +11,9 @@ The bias detector in `safety/bias_detector.py` uses regular-expression patterns 
 
 **Branch name:** `fix/bias-detector-patterns-151`
 
-**Setup confirmation:** [ ] App runs locally at localhost:5173
+**Setup confirmation:** [x] App runs locally at localhost:5173
 
-**Cohort ledger:** [ ] Issue added to cohort ledger
+**Cohort ledger:** [x] Issue added to cohort ledger
 
 ### Issue selection notes — “Is this right for me?”
 
@@ -21,8 +21,7 @@ I selected a Tier 1 issue because this was my first contribution to a large, mul
 
 ## Week 8 — Reproduction & solution planning
 
-**Reproduction commit link:** https://github.com/ascherj/pathreview/commit/b253583
-
+**Reproduction commit link:** https://github.com/ascherj/pathreview/commit/b253583edc74cb4f662c6fe0f0974aa44395c1cb
 **Reproduction summary:**
 I reproduced the issue by testing common educational-bias statements against the detector in `safety/bias_detector.py`. Statements involving bootcamp graduates, self-taught developers, and online-course students were not consistently detected because the existing regex patterns were too narrow.
 
