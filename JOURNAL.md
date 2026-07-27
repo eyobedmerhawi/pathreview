@@ -21,12 +21,12 @@ I selected a Tier 1 issue because this was my first contribution to a large, mul
 
 ## Week 8 — Reproduction & solution planning
 
-**Reproduction commit link:** [add after committing]
+**Reproduction commit link:** https://github.com/ascherj/pathreview/commit/b253583
 
 **Reproduction summary:**
 I reproduced the issue by testing common educational-bias statements against the detector in `safety/bias_detector.py`. Statements involving bootcamp graduates, self-taught developers, and online-course students were not consistently detected because the existing regex patterns were too narrow.
 
-**PLAN.md link:** [add after creating PLAN.md]
+**PLAN.md link:** https://github.com/ascherj/pathreview/blob/fix/bias-detector-patterns-151/PLAN.md
 
 **Walkthrough video (recommended):** Not recorded
 
