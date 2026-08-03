@@ -32,3 +32,39 @@ I reproduced the issue by testing common educational-bias statements against the
 
 **Blockers or open questions:**
 The main risk is expanding the regex patterns too broadly and causing neutral statements to be flagged as biased.
+
+## Week 9 — Solution building & PR submission
+
+### Check-in 1 (mid-week)
+
+**Current progress:**
+I identified the root cause of the issue in `safety/bias_detector.py`, expanded the educational bias regex patterns, and added regression tests in `tests/unit/test_bias_detector.py`. I also verified the new patterns using the updated unit tests.
+
+**Next steps:**
+Run the project's quality checks, finalize the pull request, update the documentation, and submit the completed work for review.
+
+**Blockers:**
+None.
+
+---
+
+### Check-in 2 (end of week)
+
+**PR link:**
+https://github.com/ascherj/pathreview/pull/204
+
+**Branch:**
+`fix/bias-detector-patterns-151`
+
+**What you built:**
+Expanded the educational bias detection regex patterns in `safety/bias_detector.py` to recognize additional common educational bias statements. I also added regression tests to verify the new behavior while preserving the detector's existing functionality.
+
+**Tests added or updated:**
+Updated `tests/unit/test_bias_detector.py` with regression tests covering additional educational bias statements involving bootcamp graduates, self-taught developers, and online-course students.
+
+**Self-review confirmation:**
+- [x] make check passes
+- [ ] make test-unit passes (repository contains pre-existing unrelated failing tests; my changes introduced no new failures. All 35 bias detector tests pass.)
+
+**Draft PR feedback received from:**
+None
