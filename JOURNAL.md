@@ -68,3 +68,38 @@ Updated `tests/unit/test_bias_detector.py` with regression tests covering additi
 
 **Draft PR feedback received from:**
 None
+
+## Week 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [ ] Yes  [x] No — still awaiting review
+
+**Summary of feedback:**
+No reviewer feedback was provided during the Summer 2026 contribution cycle. My pull request was submitted and the CI workflow was awaiting maintainer approval, but I did not receive specific code review comments that required changes.
+
+**How you responded:**
+
+---
+
+### Reflection
+
+**What was harder than you expected?**
+
+The Git and contribution workflow was harder than I expected. The actual change to the bias detector was fairly focused, but working through branches, commits, pre-commit hooks, formatting requirements, repository links, and pull requests required much more attention than I expected. I also ran into Ruff, Black, and mypy issues while preparing the changes. Some of those problems were not directly related to the logic of my fix, so I had to learn how to separate problems caused by my changes from problems involving formatting, tooling, or the existing repository.
+
+**What did you learn about working in a large codebase?**
+
+I learned that making a change in a large codebase requires understanding more than just the file being edited. For Issue #151, most of my implementation involved `safety/bias_detector.py` and `tests/unit/test_bias_detector.py`, but I still needed to understand the project's testing, formatting, type-checking, Git, and contribution conventions. I also learned not to modify unrelated files just because automated tools change them. Compared with my own projects, contributing to someone else's code requires being much more careful about limiting the scope of a change and following the standards that already exist.
+
+**How did AI tools help — and where did they fall short?**
+
+AI tools were most useful for helping me understand unfamiliar errors, reason about the regex patterns, troubleshoot Git commands, and interpret output from Ruff, Black, mypy, and pytest. AI also helped me break the issue into smaller steps instead of trying to understand the entire repository at once. However, I learned that I could not blindly follow every suggested command or change. At different points I still needed to inspect the actual repository, terminal output, Git status, and assignment requirements myself. For example, repository and branch links had to be verified against my actual fork rather than assumed. AI was most effective as a guide, but I still had to verify that its suggestions matched the real state of the project.
+
+**What would you do differently if you started over?**
+
+I would read the assignment templates and `CONTRIBUTING.md` more carefully before making my first commit. I initially focused mostly on solving the technical issue, but later learned that the journal format, correct branch URL, commit structure, and contribution process were also important parts of the assignment. I would also check `git status` more frequently and make smaller commits so unrelated formatting changes could be identified immediately. That would have made the process cleaner and saved time later.
+
+**What are you most proud of from this module?**
+
+I am most proud that I worked through a real open-source contribution workflow instead of only getting the code to work locally. I expanded the educational bias detection patterns, added regression tests, got all 35 bias detector tests passing, worked through the project's formatting and type-checking requirements, and submitted the change as a pull request. More importantly, I now have a much better understanding of how to move from identifying an issue to planning, implementing, testing, documenting, and submitting a contribution for review.
